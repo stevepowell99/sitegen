@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sitegen"
+dynamic = ["version"]
+description = "The static site generator behind causalmap.app and qualiainterviews.com"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["PyYAML", "Markdown"]
+
+[tool.setuptools]
+packages = ["sitegen"]
+
+[tool.setuptools.package-data]
+sitegen = ["base.css"]
+
+[tool.setuptools.dynamic]
+version = {attr = "sitegen.__version__"}
