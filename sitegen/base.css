@@ -730,7 +730,10 @@ ${before_print}/* ---- Print-only banner (shown only when printing) ---- */
   nav, .site-nav, .nav-inner, .nav-toggle, .site-search-form, .nav-logo, .nav-cta,
   footer, .footer-inner, .footer-links, .footer-social, .footer-copy,
   .accent-stripe, .print-link, .no-print,
-  .scroll-reveal, button.nav-toggle { display: none !important; }
+  button.nav-toggle { display: none !important; }
+
+  /* Headings carry .scroll-reveal; print them fully visible, not hidden or mid-fade */
+  .scroll-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
 
   /* Reveal the print banner */
   .print-banner {

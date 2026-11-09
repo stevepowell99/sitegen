@@ -7,6 +7,6 @@ see README.md. The helpers below are exported for a site's own renderers and hoo
 from .builder import build
 from .content import html_to_plain_text, inline_html, md, normalize_whitespace, render_fa_icon
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = ["build", "md", "inline_html", "render_fa_icon", "normalize_whitespace", "html_to_plain_text"]
